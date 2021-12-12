@@ -1,6 +1,6 @@
 const Calculator = require('./Calculator');
 
-describe('Calculator - Addition & Substraction', () => {
+describe('CalculatorAdditionSubstraction', () => {
 	test('Addition - Given 1 and 2, should sums 3', () => {
 		const given = {
 			a: 1,

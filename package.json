@@ -6,8 +6,8 @@
 	"scripts": {
 		"start": "node src/",
 		"test": "jest",
-		"testA": "jest -t Calculator - Addition & Substraction",
-		"testB": "jest -t Calculator - Multiplication & Division"
+		"testA": "jest -t CalculatorAdditionSubstraction",
+		"testB": "jest -t CalculatorMultiplicationDivision"
 	},
 	"author": "Preda Mihail Irinel",
 	"license": "ISC",

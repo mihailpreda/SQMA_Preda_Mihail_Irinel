@@ -1,6 +1,6 @@
 const Calculator = require('./Calculator');
 
-describe('Calculator - Multiplication & Division', () => {
+describe('CalculatorMultiplicationDivision', () => {
 	test('Multiplication - Given 3 and 4, should be equal with 12', () => {
 		const given = {
 			a: 3,
