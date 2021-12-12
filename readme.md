@@ -108,169 +108,194 @@ Copy and past it into the window dialog
 
 ### Homework 1
 
-16. Go to https://github.com/ and login into your account
-17. Create a new repository. Click on `new`
+##### Steps
+
+1. Go to https://github.com/ and login into your account
+2. Create a new repository. Click on `new`
 
 | ![Chosen Image](./steps/17CreateRepo.png) |
 | :---------------------------------------: |
-|               <b>Fig.17</b>               |
+|               <b>Fig.1</b>                |
 
-18. Choose a name and leave it as public. Press `Create Repository`
+3. Choose a name and leave it as public. Press `Create Repository`
 
 | ![Chosen Image](./steps/18RepoSettings.png) |
 | :-----------------------------------------: |
-|                <b>Fig.18</b>                |
+|                <b>Fig.2</b>                 |
 
-19. Set the origin to your repo
+4. Set the origin to your repo
 
 | ![Chosen Image](./steps/19SetOrigin.png) |
 | :--------------------------------------: |
-|              <b>Fig.19</b>               |
+|               <b>Fig.3</b>               |
 
-20. Add a new Job :
+5. Add a new Job :
 
 | ![Chosen Image](./steps/20AddANewJob.png) |
 | :---------------------------------------: |
-|               <b>Fig.20</b>               |
+|               <b>Fig.4</b>                |
 
-21. Enter Job Name
+6. Enter Job Name
 
 | ![Chosen Image](./steps/21EnterJobName.png) |
 | :-----------------------------------------: |
-|                <b>Fig.21</b>                |
+|                <b>Fig.5</b>                 |
 
-22. Enter a description. Go to `Source Code Management`, check `Git`, put the link to the repository and click `Save`
+7. Enter a description. Go to `Source Code Management`, check `Git`, put the link to the repository and click `Save`
 
 | ![Chosen Image](./steps/22ConfigureJob1.png) |
 | :------------------------------------------: |
-|                <b>Fig.22</b>                 |
+|                 <b>Fig.6</b>                 |
 
-23. If everyting is okey you will seein the workspace that the Jenkins successfully downloaded the files from Github.
+8. If everyting is okey you will seein the workspace that the Jenkins successfully downloaded the files from Github.
 
 | ![Chosen Image](./steps/23filesDownloadedSuccessfull.png) |
 | :-------------------------------------------------------: |
-|                       <b>Fig.23</b>                       |
+|                       <b>Fig.7</b>                        |
 
-24. Then go to Configure ( 24GoToConfigure.png )
+9. Then go to `Configure`
 
 | ![Chosen Image](./steps/24GoToConfigure.png) |
 | :------------------------------------------: |
-|                <b>Fig.24</b>                 |
+|                 <b>Fig.8</b>                 |
 
-25. Go to General and tick "This project is parameterized". After that you put the parameters that you have.
-    (In my case I have 2 test suits, each one is run by specifying npm run testA or npm run testB ) ( 25Parametrized.png )
+10. Go to `General` and tick `This project is parameterized`. After that you put the parameters that you have.
+    In my case I have 2 test suits, each one is run by specifying `npm run testA` or `npm run testB`
 
 | ![Chosen Image](./steps/25Parametrized.png) |
 | :-----------------------------------------: |
-|                <b>Fig.25</b>                |
+|                <b>Fig.9</b>                 |
 
-26. Then go to build and add a Windows batch command and add the following line " npm install && npm run %whichTest% " ( 26WindowsBatch.png )
+11. Then go to `Build`, add a` Windows batch command` and add the following line `npm install && npm run %whichTest%`
 
 | ![Chosen Image](./steps/26WindowsBatch.png) |
 | :-----------------------------------------: |
-|                <b>Fig.26</b>                |
+|                <b>Fig.10</b>                |
 
-27. Click on "Build with parameters" ( 27BuildWithParameters.png )
+12. Click on `Build with parameters`
 
 | ![Chosen Image](./steps/27BuildWithParameters.png) |
 | :------------------------------------------------: |
-|                   <b>Fig.27</b>                    |
+|                   <b>Fig.11</b>                    |
 
-28. Choose "testA", then press build. ( 28BuildTestA.png )
+13. Choose `testA`, then press `Build`.
 
 | ![Chosen Image](./steps/28BuildTestA.png) |
 | :---------------------------------------: |
-|               <b>Fig.28</b>               |
+|               <b>Fig.12</b>               |
 
-29. Click on the latest done build, go to "Console output" and see the results : ( 28BuildTestAConsoleOutput.png )
+14. Click on the latest done build, go to `Console Output` and see the results :
 
 | ![Chosen Image](./steps/28BuildTestAConsoleOutput.png) |
 | :----------------------------------------------------: |
-|                     <b>Fig.29</b>                      |
+|                     <b>Fig.13</b>                      |
 
-30. Click on "Build with parameters" ( 27BuildWithParameters.png )
+15. Click on `Build with parameters`
 
 | ![Chosen Image](./steps/27BuildWithParameters.png) |
 | :------------------------------------------------: |
-|                   <b>Fig.30</b>                    |
+|                   <b>Fig.14</b>                    |
 
-31. Choose "testB", then press build. ( 28BuildTestB.png )
+16. Choose `testB`, then press `Build`.
 
 | ![Chosen Image](./steps/28BuildTestB.png) |
 | :---------------------------------------: |
-|               <b>Fig.31</b>               |
+|               <b>Fig.15</b>               |
 
-32. Click on the latest done build, go to "Console output" and see the results : ( 28BuildTestBConsoleOutput.png )
+17. Click on the latest done build, go to `Console Output` and see the results :
 
 | ![Chosen Image](./steps/28BuildTestBConsoleOutput.png) |
 | :----------------------------------------------------: |
-|                     <b>Fig.32</b>                      |
+|                     <b>Fig.16</b>                      |
+
+---
 
 ### Homework 2
 
-1. From dashboard, click on new Item ( 29newItem.png )
+##### Steps
+
+1. From `Dashboard`, click on `New Item`
 
 | ![Chosen Image](./steps/29newItem.png) |
 | :------------------------------------: |
-|             <b>Fig.33</b>              |
+|              <b>Fig.1</b>              |
 
-2. Enter a name for the item, select Pipeline and press OK ( 30pipelineName.png )
+2. Enter a name for the item, select `Pipeline` and press `OK`
 
 | ![Chosen Image](./steps/30pipelineName.png) |
 | :-----------------------------------------: |
-|                <b>Fig.34</b>                |
+|                <b>Fig.2</b>                 |
 
-3. Add a description ( 31pipelineDescription.png )
+3. Add a description
 
 | ![Chosen Image](./steps/31pipelineDescription.png) |
 | :------------------------------------------------: |
-|                   <b>Fig.35</b>                    |
+|                    <b>Fig.3</b>                    |
 
-4. Scroll down to pipeline and Add a Pipeline script. To do this click on Pipeline Syntax ( 32pipelineScript.png )
+4. Scroll down to `Pipeline` and Add a `Pipeline script`. To do this click on `Pipeline Syntax`
 
 | ![Chosen Image](./steps/32pipelineScript.png) |
 | :-------------------------------------------: |
-|                 <b>Fig.36</b>                 |
+|                 <b>Fig.4</b>                  |
 
-5. From select "Snippet Generator" from left handside, then in the main page at "Sample step" select "build: Build a job".
-   After that, write the project to be build. Select with what parameter do you want the job and then click on "Generate Pipeline Script" ( 33PipelineSnippetGeneratorTestA.png, 34PipelineSnippetGeneratorTestB.png )
+5. Now, select `Snippet Generator` from the left handside, then in the main page at `Sample step` select `build: Build a job`.
+   After that, write the project to be build. Select with what parameter do you want the job and then click on `Generate Pipeline Script`
 
 | ![Chosen Image](./steps/33PipelineSnippetGeneratorTestA.png) |
 | :----------------------------------------------------------: |
-|                        <b>Fig.37</b>                         |
+|                         <b>Fig.5</b>                         |
 
-6. Copy the generated codes into the Pipeline Script and press Save. ( 35PipelineScriptSaved.png )
+| ![Chosen Image](./steps/34PipelineSnippetGeneratorTestB.png) |
+| :----------------------------------------------------------: |
+|                         <b>Fig.6</b>                         |
+
+6. Copy the generated codes into the `Pipeline Script` and press `Save`.
 
 | ![Chosen Image](./steps/35PipelineScriptSaved.png) |
 | :------------------------------------------------: |
-|                   <b>Fig.38</b>                    |
+|                    <b>Fig.7</b>                    |
 
-7. From left handside menu click on "Build Now" ( 36RunPipeline.png )
+7. From left handside menu click on `Build Now`
 
 | ![Chosen Image](./steps/36RunPipeline.png) |
 | :----------------------------------------: |
-|               <b>Fig.39</b>                |
+|                <b>Fig.8</b>                |
 
-8. To see Pipeline result click on "#2" build ( 37SeePipelineResult.png )
+8. To see Pipeline result click on latest done build
 
 | ![Chosen Image](./steps/37SeePipelineResult.png) |
 | :----------------------------------------------: |
-|                  <b>Fig.40</b>                   |
+|                   <b>Fig.9</b>                   |
 
-9. Then click on "Console Output" to see the build ( 38PipelineConsoleOutput.png )
+9. Then click on `Console Output` to see the build
 
 | ![Chosen Image](./steps/38PipelineConsoleOutput.png) |
 | :--------------------------------------------------: |
-|                    <b>Fig.41</b>                     |
+|                    <b>Fig.10</b>                     |
 
 ---
 
-Open a terminal in current directory and run `npm install`
-For this homework to work you will need 2 terminals, in which you will run the following command:
+## Project setup
 
--   Server Terminal
--   `node ./src/server.js`
--   Client Terminal
--   `node ./src/client.js`
+```
+npm install
+```
 
----
+## Project run
+
+```
+npm start
+```
+
+## Project test
+
+```
+npm test
+```
+
+## Project individual test suites
+
+```
+npm run testA
+npm run testB
+```
